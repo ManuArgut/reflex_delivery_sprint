@@ -9,6 +9,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Reflex Delivery Backend is running'
+    });
+});
+
 // Retailer logs request
 app.post('/api/retailers/request', async (req, res) => {
   const { retailer_id, customer_name, item } = req.body;
