@@ -1,9 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 const pool = require('./models/db');
 
 const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Reflex Delivery Backend is running'
+    });
+});
 
 // Retailer logs request
 app.post('/api/retailers/request', async (req, res) => {
