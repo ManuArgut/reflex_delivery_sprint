@@ -72,8 +72,8 @@ The  architecture is a delivery coordination system designed for small Kenyan re
 - Foreign keys enforce relationships
 
 - StatusUpdates table tracks delivery progress over time
- 
-- https://github.com/Rosalie-p/Reflex_delivery_Sprint/blob/main/Database/Database.txt
+
+- https://github.com/ManuArgut/reflex_delivery_sprint/blob/main/Backend/db.sql
 
 ### Workflow Diagram
 
